@@ -1,0 +1,159 @@
+﻿https://lingojam.com/edit/55fac02700f66fb874f02743de3481fa
+
+
+###name, Name of your translator...:
+Spanish to Cuneiforme
+
+
+###subtitle, Subtitle (optional):
+
+
+
+###language1, Language1 name...:
+Español
+
+
+###language2, Language2 name...:
+Cuneiforme
+
+
+###description, Description...:
+# English to cuneiform translator (approximation)
+# Note: This is for fun/educational purposes, not historically accurate
+
+# Dictionary mapping English letters to cuneiform signs
+cuneiform_dict = {
+    "A": "𒀀", "B": "𒁀", "C": "𒆠", "D": "𒁕", "E": "𒂊",
+    "F": "𒉺", "G": "𒄀", "H": "𒄩", "I": "𒄿", "J": "𒅆",
+    "K": "𒆠", "L": "𒇻", "M": "𒈠", "N": "𒉌", "O": "𒍝",
+    "P": "𒉺", "Q": "𒆩", "R": "𒊑", "S": "𒊓", "T": "𒋼",
+    "U": "𒌋", "V": "𒉺", "W": "𒉺𒇻", "X": "𒅆𒋼", "Y": "𒌒",
+    "Z": "𒍝𒊓"
+}
+
+def translate_to_cuneiform(text):
+    text = text.upper()  # convert to uppercase for matching
+    translation = ""
+    for char in text:
+        if char in cuneiform_dict:
+            translation += cuneiform_dict[char] + " "
+        else:
+            translation += char  # keep spaces/punctuation
+    return translation
+
+# Example usage
+english_text = input("Enter English text: ")
+cuneiform_text = translate_to_cuneiform(english_text)
+print("Cuneiform approximation:", cuneiform_text)
+
+
+
+###email, Admin email (optional)...:
+jvelazquez@bethelsd.org
+
+
+###phrases1, Language1...:
+
+
+
+###phrases2, Language2...:
+
+
+
+###words1, Language1...:
+
+
+
+###words2, Language2...:
+
+
+
+###intraword1, Language1...:
+
+
+
+###intraword2, Language2...:
+
+
+
+###prefixes1, Language1...:
+
+
+
+###prefixes2, Language2...:
+
+
+
+###suffixes1, Language1...:
+
+
+
+###suffixes2, Language2...:
+
+
+
+###regex1, Replace this...:
+
+
+
+###regex2, with this...:
+
+
+
+###rev_regex1, Replace this...:
+
+
+
+###rev_regex2, with this...:
+
+
+
+###ordering1, Language1...:
+
+
+
+###ordering2, Language2...:
+
+
+
+###defaulttext, One random default text string per line...:
+
+
+
+###disable-reverse, :
+on
+
+
+###custom-script, Define your functions here...:
+
+
+
+###title-extra, e.g. '(and reverse translation)':
+
+
+
+###background-image-source, http://example.com/my_image.png:
+
+
+
+###title-font-name, Name of custom font...:
+
+
+
+###title-font-size, Size of title (default=5.5)...:
+
+
+
+###language1-font, Language1 font...:
+
+
+
+###language2-font, Language2 font...:
+
+
+
+###language1-font-size, Language1 font size (default=24)...:
+
+
+
+###language2-font-size, Language2 font size (default=24)...:
